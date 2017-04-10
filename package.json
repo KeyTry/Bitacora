@@ -1,0 +1,24 @@
+{
+    "name": "bitacora",
+    "version": "1.0.0",
+    "description": "bitacora",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "bitacora",
+        "website",
+        "project"
+    ],
+    "author": "Daniel Somarribas",
+    "license": "ISC",
+    "dependencies": {
+        "bourbon": "^4.3.3",
+        "browser-sync": "^2.18.8",
+        "eyeglass": "^1.2.1",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0"
+    },
+    "devDependencies": {}
+}

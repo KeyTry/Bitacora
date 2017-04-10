@@ -1,0 +1,184 @@
+// import settings :
+@import 'settings';
+@import 'fontFace';
+@import 'mixins';
+$titles-bg: #4a3921;
+$divider-color: #eddd00;
+
+.divider {
+    height: 64px;
+    background-color: $divider-color;
+    z-index: 1;
+}
+
+.square {
+    height: 128px;
+    width: 128px;
+    background-color: $divider-color;
+    z-index: 2;
+    margin: auto;
+    position: relative;
+    bottom: 32px;
+    overflow: hidden;
+}
+
+.smaller-square {
+    position: relative;
+    width: 58%;
+    height: 58%;
+    margin: 10% auto auto;
+    background: $divider-color;
+    border-right: solid 24px #beb200;
+    border-bottom: solid 24px #beb200;
+}
+
+.body {
+    background-color: #a18e59;
+}
+
+.texts {
+    background-color: #eedc9d;
+    padding-top: 64px;
+    margin: 0;
+    position: relative;
+    @include bodies;
+    color: #000;
+}
+
+.paragraphs {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.big-title {
+    h1 {
+        font-size: 48px;
+        margin-bottom: 32px;
+        color: #000;
+    }
+}
+
+.block-1 {
+    background-color: #4b3920;
+    @include bodies;
+    @include blokk;
+    color: #fff;
+    opacity: .8;
+}
+
+.semana-title-1 {
+    background-color: #574935;
+    @include tittles;
+}
+
+.semana-title-1:hover {
+    background-color: #392810;
+}
+
+.block-2 {
+    background-color: #b28341;
+    @include bodies;
+    @include blokk;
+    color: #000;
+    opacity: .8;
+}
+
+.semana-title-2 {
+    background-color: #DCB175;
+    @include tittles;
+}
+
+.semana-title-2:hover {
+    background-color: #875A1B;
+}
+
+.oculto {
+    display: none;
+    margin: 32px 32px 48px;
+}
+
+.footer-container {
+    @include titles;
+    background-color: $titles-bg;
+    color: #fff;
+}
+
+.footer {
+    padding: 64px 0;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-container {
+    @include titles;
+    background-color: $titles-bg;
+    padding-top: 48px;
+}
+
+.header {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #c39548;
+    font-family: 'Titles';
+    line-height: 2em;
+    box-shadow: 0 10px 0 0 #89652a;
+    opacity: .9;
+    margin-bottom: 16px;
+}
+
+button:active {
+    box-shadow: none;
+    top: 10px;
+    margin-bottom: 0;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active,
+button:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    float: left;
+    height: 256px;
+    border: solid 18px $divider-color;
+    margin: 24px;
+    max-width: 75%;
+    max-height: auto;
+}
+
+a {
+    text-decoration: none;
+}

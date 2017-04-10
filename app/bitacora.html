@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container header-container">
+        <div class="row row-align-center row-align-middle header">
+            <div class="gr-4 prefix-2 gr-10@mobile gr-8@tablet">
+                <a href="index.html"><h1>Daniel S.Q.</h1></a>
+            </div>
+            <div class="gr-2 prefix-2 suffix-2 gr-10@mobile gr-8@tablet">
+                <a href="index.html">
+                    <button type="button" name="button">
+                        <h3>Volver a Inicio</h3>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="gr-12 divider">
+            <div class="row row-align-middle row-align-center">
+                <div class="gr-4 square">
+                    <div class="smaller-square">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="row row-align-middle row-align-center">
+            <div class="gr-8 gr-12@mobile texts">
+                <div class="row row-align-middle row-align-center">
+                    <div class="gr-11 paragraphs big-title">
+                        <h1>Bitácora De Diseño Web</h1>
+                    </div>
+                    <div class="gr-12  block-1">
+                        <div class="row row-align-center row-align-middle">
+                            <div class="gr-12 semana-title-1" onclick="mostrarContenido(1);">
+                                <h1>Clase 1</h1>
+                                <h4>15 de Marzo</h4>
+                            </div>
+                        </div>
+                        <div class="row row-align-center row-align-middle">
+                            <div class="oculto gr-7" id="s1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gr-12  block-2">
+                        <div class="row row-align-center row-align-middle">
+                            <div class="gr-12 semana-title-2" onclick="mostrarContenido(2);">
+                                <h1>Clase 2</h1>
+                                <h4>22 de Marzo</h4>
+                            </div>
+                        </div>
+                        <div class="row row-align-center row-align-middle">
+                            <div class="oculto gr-7" id="s2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-container">
+        <div class="gr-12 divider">
+            <div class="row row-align-middle row-align-center">
+                <div class="gr-4 square">
+                    <div class="smaller-square">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-align-middle row-align-center">
+            <div class="gr-9 footer">
+                <h3>Daniel Somarribas - 2017</h3>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        console.log("javascript cargado");
+        var estadoSemana = [];
+
+        for (var i = 0; i < 16; i++) {
+            estadoSemana[i] = false;
+        }
+
+        function mostrarContenido(numeroSemana) {
+            if (estadoSemana[numeroSemana] == true) {
+                var nombrePagina = 's' + numeroSemana;
+                var sem = document.getElementById(nombrePagina);
+                sem.style.display = 'none';
+                sem.parentElement.style.opacity = 0.8;
+                estadoSemana[numeroSemana] = false;
+            } else {
+                nombrePagina = 's' + numeroSemana;
+                var sem = document.getElementById(nombrePagina);
+                sem.style.display = 'block';
+                sem.parentElement.style.opacity = 0.9;
+                estadoSemana[numeroSemana] = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
