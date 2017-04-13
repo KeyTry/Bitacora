@@ -66,7 +66,7 @@ $general-text-color: #fff;
 .paragraphs {
     display: inline-block;
     text-align: center;
-
+    @include bodies;
 }
 
 .big-title {
@@ -160,6 +160,7 @@ button {
     font-family: 'Titles';
     box-shadow: 0 10px 0 0 $button-shadow-color;
     opacity: .9;
+    padding: 12px;
 }
 
 button:active {

@@ -45,30 +45,34 @@
     h6,
     p {
         font-family: 'Body';
+        line-height: 1.5em;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 4.209em;
+        margin-bottom: 16px;
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 3.157em;
+        margin-bottom: 16px;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 2.369em;
+        margin-bottom: 16px;
     }
 
     h4 {
-        font-size: 26px;
+        font-size: 1em;
     }
 
     h5 {
-        font-size: 26px;
+        font-size: .75em;
     }
 
     h6 {
-        font-size: 20px;
+        font-size: .563em;
     }
 
     p {
@@ -90,7 +94,6 @@
         margin-left: 32px;
         margin-bottom: 12px;
     }
-
 }
 @mixin tittles {
     cursor: pointer;
