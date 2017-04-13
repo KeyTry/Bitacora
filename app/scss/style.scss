@@ -2,11 +2,28 @@
 @import 'settings';
 @import 'fontFace';
 @import 'mixins';
-$titles-bg: #4a3921;
-$divider-color: #eddd00;
+
+$titles-bg: #7CDBD5;
+
+$divider-color: #F9BE02;
+$divider-darker: #FF9829;
+
+$body-color: #02C8A7;
+$texts-color: #F53240;
+
+$button-color: #F9BE02;
+$button-shadow-color: #b68b00;
+$button-text-color: #fff;
+
+$section-color: #0EE25D;
+$section-darker: #F9BE02;
+$section-lighter: #0EE25D;
+$text-color: #fff;
+
+$general-text-color: #fff;
 
 .divider {
-    height: 64px;
+    height: 3px;
     background-color: $divider-color;
     z-index: 1;
 }
@@ -18,8 +35,9 @@ $divider-color: #eddd00;
     z-index: 2;
     margin: auto;
     position: relative;
-    bottom: 32px;
+    bottom: 64px;
     overflow: hidden;
+    border-radius: 64px;
 }
 
 .smaller-square {
@@ -28,21 +46,21 @@ $divider-color: #eddd00;
     height: 58%;
     margin: 10% auto auto;
     background: $divider-color;
-    border-right: solid 24px #beb200;
-    border-bottom: solid 24px #beb200;
+    border-right: solid 24px $divider-darker;
+    border-bottom: solid 24px $divider-darker;
 }
 
 .body {
-    background-color: #a18e59;
+    background-color: $body-color;
 }
 
 .texts {
-    background-color: #eedc9d;
+    background-color: $texts-color;
     padding-top: 64px;
     margin: 0;
     position: relative;
     @include bodies;
-    color: #000;
+    color: $general-text-color;
 }
 
 .paragraphs {
@@ -55,42 +73,42 @@ $divider-color: #eddd00;
     h1 {
         font-size: 48px;
         margin-bottom: 32px;
-        color: #000;
+        color: $general-text-color;
     }
 }
 
 .block-1 {
-    background-color: #4b3920;
+    background-color: $section-color;
     @include bodies;
     @include blokk;
-    color: #fff;
+    color: $text-color;
     opacity: .8;
 }
 
 .semana-title-1 {
-    background-color: #574935;
+    background-color: $section-lighter;
     @include tittles;
 }
 
 .semana-title-1:hover {
-    background-color: #392810;
+    background-color: $section-darker;
 }
 
 .block-2 {
-    background-color: #b28341;
+    background-color: $section-color;
     @include bodies;
     @include blokk;
-    color: #000;
+    color: $text-color;
     opacity: .8;
 }
 
 .semana-title-2 {
-    background-color: #DCB175;
+    background-color: $section-lighter;
     @include tittles;
 }
 
 .semana-title-2:hover {
-    background-color: #875A1B;
+    background-color: $section-darker;
 }
 
 .oculto {
@@ -101,12 +119,16 @@ $divider-color: #eddd00;
 .footer-container {
     @include titles;
     background-color: $titles-bg;
-    color: #fff;
+    color: $general-text-color;
 }
 
 .footer {
     padding: 64px 0;
     text-align: center;
+
+    p {
+        font-size: 2.369em;
+    }
 }
 
 body {
@@ -128,22 +150,16 @@ body {
 
 button {
     position: relative;
-    top: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
     display: block;
     border: 0;
     cursor: pointer;
     border-radius: 12px;
-    padding: 18px;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #c39548;
+    font-size: 2.369em;
+    color: $button-text-color;
+    background-color: $button-color;
     font-family: 'Titles';
-    line-height: 2em;
-    box-shadow: 0 10px 0 0 #89652a;
+    box-shadow: 0 10px 0 0 $button-shadow-color;
     opacity: .9;
-    margin-bottom: 16px;
 }
 
 button:active {

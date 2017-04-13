@@ -1,9 +1,9 @@
 @import 'fontFace';
-@include fontFace( 'Titles','PressStart2P-Regular');
-@include fontFace( 'Body','PT_Sans-Web-Regular');
-@include fontFace( 'Body-Italic','PT_Sans-Web-Italic');
-@include fontFace( 'Body-Bold','PT_Sans-Web-Bold');
-@include fontFace( 'Body-BoldItalic','PT_Sans-Web-BoldItalic');
+@include fontFace( 'Titles','Abel-Regular');
+@include fontFace( 'Body','Ubuntu-Regular');
+@include fontFace( 'Body-Italic','Ubuntu-Italic');
+@include fontFace( 'Body-Bold','Ubuntu-Bold');
+@include fontFace( 'Body-BoldItalic','Ubuntu-BoldItalic');
 @mixin titles {
     h1,
     h2,
@@ -18,12 +18,17 @@
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 4.209em;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 3.157em;
         margin-bottom: 16px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 2.369em;
         margin-bottom: 16px;
     }
 }
@@ -67,7 +72,7 @@
     }
 
     p {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     i {

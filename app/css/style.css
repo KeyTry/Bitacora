@@ -1,71 +1,72 @@
 @font-face {
   font-family: "Titles";
-  src: url("../fonts/PressStart2P-Regular.eot");
-  src: url("../fonts/PressStart2P-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PressStart2P-Regular.woff") format("woff"), url("../fonts/PressStart2P-Regular.woff2") format("woff2"), url("../fonts/PressStart2P-Regular.ttf") format("truetype"), url("../fonts/PressStart2P-Regular.svg#Titles") format("svg");
+  src: url("../fonts/Abel-Regular.eot");
+  src: url("../fonts/Abel-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Abel-Regular.woff") format("woff"), url("../fonts/Abel-Regular.woff2") format("woff2"), url("../fonts/Abel-Regular.ttf") format("truetype"), url("../fonts/Abel-Regular.svg#Titles") format("svg");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Body";
-  src: url("../fonts/PT_Sans-Web-Regular.eot");
-  src: url("../fonts/PT_Sans-Web-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Web-Regular.woff") format("woff"), url("../fonts/PT_Sans-Web-Regular.woff2") format("woff2"), url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype"), url("../fonts/PT_Sans-Web-Regular.svg#Body") format("svg");
+  src: url("../fonts/Ubuntu-Regular.eot");
+  src: url("../fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.svg#Body") format("svg");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Body-Italic";
-  src: url("../fonts/PT_Sans-Web-Italic.eot");
-  src: url("../fonts/PT_Sans-Web-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Web-Italic.woff") format("woff"), url("../fonts/PT_Sans-Web-Italic.woff2") format("woff2"), url("../fonts/PT_Sans-Web-Italic.ttf") format("truetype"), url("../fonts/PT_Sans-Web-Italic.svg#Body-Italic") format("svg");
+  src: url("../fonts/Ubuntu-Italic.eot");
+  src: url("../fonts/Ubuntu-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Italic.woff") format("woff"), url("../fonts/Ubuntu-Italic.woff2") format("woff2"), url("../fonts/Ubuntu-Italic.ttf") format("truetype"), url("../fonts/Ubuntu-Italic.svg#Body-Italic") format("svg");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Body-Bold";
-  src: url("../fonts/PT_Sans-Web-Bold.eot");
-  src: url("../fonts/PT_Sans-Web-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Web-Bold.woff") format("woff"), url("../fonts/PT_Sans-Web-Bold.woff2") format("woff2"), url("../fonts/PT_Sans-Web-Bold.ttf") format("truetype"), url("../fonts/PT_Sans-Web-Bold.svg#Body-Bold") format("svg");
+  src: url("../fonts/Ubuntu-Bold.eot");
+  src: url("../fonts/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.ttf") format("truetype"), url("../fonts/Ubuntu-Bold.svg#Body-Bold") format("svg");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Body-BoldItalic";
-  src: url("../fonts/PT_Sans-Web-BoldItalic.eot");
-  src: url("../fonts/PT_Sans-Web-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Web-BoldItalic.woff") format("woff"), url("../fonts/PT_Sans-Web-BoldItalic.woff2") format("woff2"), url("../fonts/PT_Sans-Web-BoldItalic.ttf") format("truetype"), url("../fonts/PT_Sans-Web-BoldItalic.svg#Body-BoldItalic") format("svg");
+  src: url("../fonts/Ubuntu-BoldItalic.eot");
+  src: url("../fonts/Ubuntu-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-BoldItalic.woff") format("woff"), url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../fonts/Ubuntu-BoldItalic.ttf") format("truetype"), url("../fonts/Ubuntu-BoldItalic.svg#Body-BoldItalic") format("svg");
   font-style: normal;
   font-weight: normal; }
 
 .divider {
-  height: 64px;
-  background-color: #eddd00;
+  height: 3px;
+  background-color: #F9BE02;
   z-index: 1; }
 
 .square {
   height: 128px;
   width: 128px;
-  background-color: #eddd00;
+  background-color: #F9BE02;
   z-index: 2;
   margin: auto;
   position: relative;
-  bottom: 32px;
-  overflow: hidden; }
+  bottom: 64px;
+  overflow: hidden;
+  border-radius: 64px; }
 
 .smaller-square {
   position: relative;
   width: 58%;
   height: 58%;
   margin: 10% auto auto;
-  background: #eddd00;
-  border-right: solid 24px #beb200;
-  border-bottom: solid 24px #beb200; }
+  background: #F9BE02;
+  border-right: solid 24px #FF9829;
+  border-bottom: solid 24px #FF9829; }
 
 .body {
-  background-color: #a18e59; }
+  background-color: #02C8A7; }
 
 .texts {
-  background-color: #eedc9d;
+  background-color: #F53240;
   padding-top: 64px;
   margin: 0;
   position: relative;
-  color: #000; }
+  color: #fff; }
   .texts h1,
   .texts h2,
   .texts h3 {
@@ -89,7 +90,7 @@
   .texts h6 {
     font-size: 20px; }
   .texts p {
-    font-size: 16px; }
+    font-size: 1em; }
   .texts i {
     font-family: 'Body-Italic'; }
   .texts b {
@@ -102,10 +103,10 @@
 .big-title h1 {
   font-size: 48px;
   margin-bottom: 32px;
-  color: #000; }
+  color: #fff; }
 
 .block-1 {
-  background-color: #4b3920;
+  background-color: #0EE25D;
   line-height: 28px;
   color: #fff;
   opacity: .8; }
@@ -132,7 +133,7 @@
   .block-1 h6 {
     font-size: 20px; }
   .block-1 p {
-    font-size: 16px; }
+    font-size: 1em; }
   .block-1 i {
     font-family: 'Body-Italic'; }
   .block-1 b {
@@ -142,17 +143,17 @@
     margin-bottom: 12px; }
 
 .semana-title-1 {
-  background-color: #574935;
+  background-color: #0EE25D;
   cursor: pointer;
   padding: 32px; }
 
 .semana-title-1:hover {
-  background-color: #392810; }
+  background-color: #F9BE02; }
 
 .block-2 {
-  background-color: #b28341;
+  background-color: #0EE25D;
   line-height: 28px;
-  color: #000;
+  color: #fff;
   opacity: .8; }
   .block-2 h1,
   .block-2 h2,
@@ -177,7 +178,7 @@
   .block-2 h6 {
     font-size: 20px; }
   .block-2 p {
-    font-size: 16px; }
+    font-size: 1em; }
   .block-2 i {
     font-family: 'Body-Italic'; }
   .block-2 b {
@@ -187,19 +188,19 @@
     margin-bottom: 12px; }
 
 .semana-title-2 {
-  background-color: #DCB175;
+  background-color: #0EE25D;
   cursor: pointer;
   padding: 32px; }
 
 .semana-title-2:hover {
-  background-color: #875A1B; }
+  background-color: #F9BE02; }
 
 .oculto {
   display: none;
   margin: 32px 32px 48px; }
 
 .footer-container {
-  background-color: #4a3921;
+  background-color: #7CDBD5;
   color: #fff; }
   .footer-container h1,
   .footer-container h2,
@@ -212,15 +213,20 @@
     color: #ffffff;
     line-height: 1.5em; }
   .footer-container h1 {
-    font-size: 48px;
+    font-size: 4.209em;
+    margin-bottom: 16px; }
+  .footer-container h2 {
+    font-size: 3.157em;
     margin-bottom: 16px; }
   .footer-container h3 {
-    font-size: 16px;
+    font-size: 2.369em;
     margin-bottom: 16px; }
 
 .footer {
   padding: 64px 0;
   text-align: center; }
+  .footer p {
+    font-size: 2.369em; }
 
 body {
   margin: 0;
@@ -228,7 +234,7 @@ body {
   overflow-x: hidden; }
 
 .header-container {
-  background-color: #4a3921;
+  background-color: #7CDBD5;
   padding-top: 48px; }
   .header-container h1,
   .header-container h2,
@@ -241,10 +247,13 @@ body {
     color: #ffffff;
     line-height: 1.5em; }
   .header-container h1 {
-    font-size: 48px;
+    font-size: 4.209em;
+    margin-bottom: 16px; }
+  .header-container h2 {
+    font-size: 3.157em;
     margin-bottom: 16px; }
   .header-container h3 {
-    font-size: 16px;
+    font-size: 2.369em;
     margin-bottom: 16px; }
 
 .header {
@@ -253,22 +262,16 @@ body {
 
 button {
   position: relative;
-  top: 0;
-  margin-top: 0;
-  margin-bottom: 10px;
   display: block;
   border: 0;
   cursor: pointer;
   border-radius: 12px;
-  padding: 18px;
-  font-size: 18px;
-  color: #ffffff;
-  background-color: #c39548;
+  font-size: 2.369em;
+  color: #fff;
+  background-color: #F9BE02;
   font-family: 'Titles';
-  line-height: 2em;
-  box-shadow: 0 10px 0 0 #89652a;
-  opacity: .9;
-  margin-bottom: 16px; }
+  box-shadow: 0 10px 0 0 #b68b00;
+  opacity: .9; }
 
 button:active {
   box-shadow: none;
@@ -293,7 +296,7 @@ h6 {
 img {
   float: left;
   height: 256px;
-  border: solid 18px #eddd00;
+  border: solid 18px #F9BE02;
   margin: 24px;
   max-width: 75%;
   max-height: auto; }
