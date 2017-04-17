@@ -13,69 +13,71 @@
     h6,
     p {
         font-family: 'Titles';
-        color: #ffffff;
+        color      : #ffffff;
         line-height: 1.5em;
     }
 
     h1 {
-        font-size: 4.209em;
+        font-size    : 6.854em;
         margin-bottom: 16px;
     }
 
     h2 {
-        font-size: 3.157em;
+        font-size    : 4.236em;
         margin-bottom: 16px;
     }
 
     h3 {
-        font-size: 2.369em;
+        font-size    : 2.618em;
         margin-bottom: 16px;
     }
 }
 @mixin bodies {
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
         font-family: 'Titles';
         line-height: 1.5em;
     }
 
-    h4,
     h5,
     h6,
-    p {
+    p,
+    ul {
         font-family: 'Body';
         line-height: 1.5em;
     }
 
     h1 {
-        font-size: 4.209em;
+        font-size    : 6.854em;
         margin-bottom: 16px;
     }
 
     h2 {
-        font-size: 3.157em;
+        font-size    : 4.236em;
         margin-bottom: 16px;
     }
 
     h3 {
-        font-size: 2.369em;
+        font-size    : 2.618em;
         margin-bottom: 16px;
     }
 
     h4 {
-        font-size: 1em;
+        font-size: 1.618em;
     }
 
     h5 {
-        font-size: .75em;
+        font-size: 1em;
     }
 
     h6 {
-        font-size: .563em;
+        font-size: 0.618em;
     }
 
-    p {
+    p,
+    ul {
         font-size: 1em;
     }
 
@@ -91,11 +93,11 @@
     line-height: 28px;
 
     h4 {
-        margin-left: 32px;
+        margin-left  : 32px;
         margin-bottom: 12px;
     }
 }
 @mixin tittles {
-    cursor: pointer;
+    cursor : pointer;
     padding: 32px;
 }

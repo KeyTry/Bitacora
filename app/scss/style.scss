@@ -2,51 +2,45 @@
 @import 'settings';
 @import 'fontFace';
 @import 'mixins';
-
 $titles-bg: #7CDBD5;
-
 $divider-color: #F9BE02;
 $divider-darker: #FF9829;
-
 $body-color: #02C8A7;
 $texts-color: #F53240;
-
 $button-color: #F9BE02;
 $button-shadow-color: #b68b00;
 $button-text-color: #fff;
-
-$section-color: #0EE25D;
+$section-color: #06BE49;
 $section-darker: #F9BE02;
 $section-lighter: #0EE25D;
 $text-color: #fff;
-
 $general-text-color: #fff;
 
 .divider {
-    height: 3px;
+    height          : 3px;
     background-color: $divider-color;
-    z-index: 1;
+    z-index         : 1;
 }
 
 .square {
-    height: 128px;
-    width: 128px;
+    height          : 128px;
+    width           : 128px;
     background-color: $divider-color;
-    z-index: 2;
-    margin: auto;
-    position: relative;
-    bottom: 64px;
-    overflow: hidden;
-    border-radius: 64px;
+    z-index         : 2;
+    margin          : auto;
+    position        : relative;
+    bottom          : 64px;
+    overflow        : hidden;
+    border-radius   : 64px;
 }
 
 .smaller-square {
-    position: relative;
-    width: 58%;
-    height: 58%;
-    margin: 10% auto auto;
-    background: $divider-color;
-    border-right: solid 24px $divider-darker;
+    position     : relative;
+    width        : 58%;
+    height       : 58%;
+    margin       : 10% auto auto;
+    background   : $divider-color;
+    border-right : solid 24px $divider-darker;
     border-bottom: solid 24px $divider-darker;
 }
 
@@ -56,24 +50,24 @@ $general-text-color: #fff;
 
 .texts {
     background-color: $texts-color;
-    padding-top: 64px;
-    margin: 0;
-    position: relative;
+    padding-top     : 64px;
+    margin          : 0;
+    position        : relative;
     @include bodies;
-    color: $general-text-color;
+    color           : $general-text-color;
 }
 
 .paragraphs {
-    display: inline-block;
+    display   : inline-block;
     text-align: center;
-    @include bodies;
+    @include titles;
 }
 
 .big-title {
     h1 {
-        font-size: 48px;
+        font-size    : 48px;
         margin-bottom: 32px;
-        color: $general-text-color;
+        color        : $general-text-color;
     }
 }
 
@@ -81,8 +75,8 @@ $general-text-color: #fff;
     background-color: $section-color;
     @include bodies;
     @include blokk;
-    color: $text-color;
-    opacity: .8;
+    color           : $text-color;
+    opacity         : 0.8;
 }
 
 .semana-title-1 {
@@ -98,8 +92,8 @@ $general-text-color: #fff;
     background-color: $section-color;
     @include bodies;
     @include blokk;
-    color: $text-color;
-    opacity: .8;
+    color           : $text-color;
+    opacity         : 0.8;
 }
 
 .semana-title-2 {
@@ -113,17 +107,17 @@ $general-text-color: #fff;
 
 .oculto {
     display: none;
-    margin: 32px 32px 48px;
+    margin : 32px 32px 48px;
 }
 
 .footer-container {
     @include titles;
     background-color: $titles-bg;
-    color: $general-text-color;
+    color           : $general-text-color;
 }
 
 .footer {
-    padding: 64px 0;
+    padding   : 64px 0;
     text-align: center;
 
     p {
@@ -132,40 +126,40 @@ $general-text-color: #fff;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     overflow-x: hidden;
 }
 
 .header-container {
     @include titles;
     background-color: $titles-bg;
-    padding-top: 48px;
+    padding-top     : 48px;
 }
 
 .header {
     margin-bottom: 64px;
-    text-align: center;
+    text-align   : center;
 }
 
 button {
-    position: relative;
-    display: block;
-    border: 0;
-    cursor: pointer;
-    border-radius: 12px;
-    font-size: 2.369em;
-    color: $button-text-color;
+    position        : relative;
+    display         : block;
+    border          : 0;
+    cursor          : pointer;
+    border-radius   : 12px;
+    font-size       : 2.618em;
+    color           : $button-text-color;
     background-color: $button-color;
-    font-family: 'Titles';
-    box-shadow: 0 10px 0 0 $button-shadow-color;
-    opacity: .9;
-    padding: 12px;
+    font-family     : 'Titles';
+    box-shadow      : 0 10px 0 0 $button-shadow-color;
+    opacity         : 0.9;
+    padding         : 12px;
 }
 
 button:active {
-    box-shadow: none;
-    top: 10px;
+    box-shadow   : none;
+    top          : 10px;
     margin-bottom: 0;
 }
 
@@ -188,12 +182,17 @@ h6 {
 }
 
 img {
-    float: left;
-    height: 256px;
-    border: solid 18px $divider-color;
-    margin: 24px;
-    max-width: 75%;
+    float     : right;
+    max-width : 90%;
     max-height: auto;
+    border    : solid 18px $divider-color;
+    margin    : 24px;
+    text-align: right;
+}
+
+.img-presentation {
+    float : left;
+    height: 256px;
 }
 
 a {
