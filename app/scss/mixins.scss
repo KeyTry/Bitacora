@@ -14,71 +14,42 @@
     p {
         font-family: 'Titles';
         color      : #ffffff;
-        line-height: 1.5em;
+        line-height: 1.618em;
+        margin     : 1em 0;
     }
 
     h1 {
-        font-size    : 6.854em;
-        margin-bottom: 16px;
+        font-size: 8.415em;
     }
 
     h2 {
-        font-size    : 4.236em;
-        margin-bottom: 16px;
+        font-size: 6.313em;
     }
 
     h3 {
-        font-size    : 2.618em;
-        margin-bottom: 16px;
+        font-size: 4.736em;
     }
 }
 @mixin bodies {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
         font-family: 'Titles';
-        line-height: 1.5em;
+        line-height: 1.618em;
+        margin     : 1em 0;
     }
 
-    h5,
+    b,
     h6,
+    i,
+    li,
     p,
     ul {
         font-family: 'Body';
-        line-height: 1.5em;
-    }
-
-    h1 {
-        font-size    : 6.854em;
-        margin-bottom: 16px;
-    }
-
-    h2 {
-        font-size    : 4.236em;
-        margin-bottom: 16px;
-    }
-
-    h3 {
-        font-size    : 2.618em;
-        margin-bottom: 16px;
-    }
-
-    h4 {
-        font-size: 1.618em;
-    }
-
-    h5 {
-        font-size: 1em;
-    }
-
-    h6 {
-        font-size: 0.618em;
-    }
-
-    p,
-    ul {
-        font-size: 1em;
+        line-height: 1.618em;
+        margin     : 1em 0;
     }
 
     i {
@@ -88,14 +59,46 @@
     b {
         font-family: 'Body-Bold';
     }
+
+    b > i,
+    i > b {
+        font-family: 'Body-BoldItalic';
+    }
+
+    h1 {
+        font-size: 10.28em;
+    }
+
+    h2 {
+        font-size: 6.354em;
+    }
+
+    h3 {
+        font-size: 3.927em;
+    }
+
+    h4 {
+        font-size: 2.427em;
+    }
+
+    h5 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 0.927em;
+    }
+
+    b,
+    i,
+    li,
+    p,
+    ul {
+        font-size: 1.5em;
+    }
 }
 @mixin blokk {
     line-height: 28px;
-
-    h4 {
-        margin-left  : 32px;
-        margin-bottom: 12px;
-    }
 }
 @mixin tittles {
     cursor : pointer;

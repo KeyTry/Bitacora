@@ -64,50 +64,33 @@ $general-text-color: #fff;
 }
 
 .big-title {
-    h1 {
-        font-size    : 48px;
-        margin-bottom: 32px;
-        color        : $general-text-color;
+    @include titles;
+}
+
+.block {
+    background-color: $section-color;
+    @include bodies;
+    @include blokk;
+    color           : $text-color;
+    opacity         : 0.8;
+}
+
+.semana-title {
+    background-color: $section-lighter;
+    @include tittles;
+
+    h4 {
+        margin-left: 64px;
     }
 }
 
-.block-1 {
-    background-color: $section-color;
-    @include bodies;
-    @include blokk;
-    color           : $text-color;
-    opacity         : 0.8;
-}
-
-.semana-title-1 {
-    background-color: $section-lighter;
-    @include tittles;
-}
-
-.semana-title-1:hover {
-    background-color: $section-darker;
-}
-
-.block-2 {
-    background-color: $section-color;
-    @include bodies;
-    @include blokk;
-    color           : $text-color;
-    opacity         : 0.8;
-}
-
-.semana-title-2 {
-    background-color: $section-lighter;
-    @include tittles;
-}
-
-.semana-title-2:hover {
+.semana-title:hover {
     background-color: $section-darker;
 }
 
 .oculto {
-    display: none;
-    margin : 32px 32px 48px;
+    margin: 32px 32px 48px;
+    width : 90%;
 }
 
 .footer-container {
@@ -147,19 +130,21 @@ button {
     display         : block;
     border          : 0;
     cursor          : pointer;
-    border-radius   : 12px;
-    font-size       : 2.618em;
+    border-radius   : 16px;
     color           : $button-text-color;
     background-color: $button-color;
     font-family     : 'Titles';
-    box-shadow      : 0 10px 0 0 $button-shadow-color;
+    font-size       : 3.927em;
+    box-shadow      : 0 24px 0 0 $button-shadow-color;
     opacity         : 0.9;
     padding         : 12px;
+    bottom          : 32px;
+    margin          : 24px;
 }
 
 button:active {
     box-shadow   : none;
-    top          : 10px;
+    top          : 24px;
     margin-bottom: 0;
 }
 
@@ -182,12 +167,14 @@ h6 {
 }
 
 img {
-    float     : right;
-    max-width : 90%;
-    max-height: auto;
-    border    : solid 18px $divider-color;
-    margin    : 24px;
-    text-align: right;
+    float        : right;
+    max-width    : 42%;
+    max-height   : auto;
+    border       : solid 18px $divider-color;
+    margin       : 24px;
+    text-align   : right;
+    margin-right : 92px;
+    border-radius: 3px;
 }
 
 .img-presentation {
