@@ -89,8 +89,18 @@ $general-text-color: #fff;
 }
 
 .oculto {
-    margin: 32px 32px 48px;
-    width : 90%;
+    margin : 32px;
+    width  : 100%;
+    display: none;
+}
+
+.oculto-text {
+    padding-right: 64px;
+    display      : inline-block;
+    margin-bottom: 92px;
+    margin-left  : 32px;
+    margin-right : 32px;
+    display      : inline-block;
 }
 
 .footer-container {
@@ -168,13 +178,15 @@ h6 {
 
 img {
     float        : right;
-    max-width    : 42%;
+    width        : 250px;
+    max-width    : 90vw;
     max-height   : auto;
     border       : solid 18px $divider-color;
-    margin       : 24px;
     text-align   : right;
-    margin-right : 92px;
     border-radius: 3px;
+    display      : inline-block;
+    margin-left  : 32px;
+    margin-top   : 64px;
 }
 
 .img-presentation {

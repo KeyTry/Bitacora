@@ -73,8 +73,8 @@
   .texts h4,
   .texts h5 {
     font-family: 'Titles';
-    line-height: 1.618em;
-    margin: 1em 0; }
+    line-height: 1.5em;
+    margin: 0.5em 0; }
   .texts b,
   .texts h6,
   .texts i,
@@ -82,7 +82,7 @@
   .texts p,
   .texts ul {
     font-family: 'Body';
-    line-height: 1.618em;
+    line-height: 1.5em;
     margin: 1em 0; }
   .texts i {
     font-family: 'Body-Italic'; }
@@ -92,15 +92,15 @@
   .texts i > b {
     font-family: 'Body-BoldItalic'; }
   .texts h1 {
-    font-size: 10.28em; }
+    font-size: 3.998em; }
   .texts h2 {
-    font-size: 6.354em; }
+    font-size: 2.827em; }
   .texts h3 {
-    font-size: 3.927em; }
+    font-size: 1.999em; }
   .texts h4 {
-    font-size: 2.427em; }
+    font-size: 1.414em; }
   .texts h5 {
-    font-size: 1.5em; }
+    font-size: 1em; }
   .texts h6 {
     font-size: 0.927em; }
   .texts b,
@@ -108,7 +108,7 @@
   .texts li,
   .texts p,
   .texts ul {
-    font-size: 1.5em; }
+    font-size: 1em; }
 
 .paragraphs {
   display: inline-block;
@@ -122,14 +122,14 @@
   .paragraphs p {
     font-family: 'Titles';
     color: #ffffff;
-    line-height: 1.618em;
+    line-height: 1em;
     margin: 1em 0; }
   .paragraphs h1 {
-    font-size: 8.415em; }
+    font-size: 5.653em; }
   .paragraphs h2 {
-    font-size: 6.313em; }
+    font-size: 3.998em; }
   .paragraphs h3 {
-    font-size: 4.736em; }
+    font-size: 2.827em; }
 
 .big-title h1,
 .big-title h2,
@@ -140,17 +140,17 @@
 .big-title p {
   font-family: 'Titles';
   color: #ffffff;
-  line-height: 1.618em;
+  line-height: 1em;
   margin: 1em 0; }
 
 .big-title h1 {
-  font-size: 8.415em; }
+  font-size: 5.653em; }
 
 .big-title h2 {
-  font-size: 6.313em; }
+  font-size: 3.998em; }
 
 .big-title h3 {
-  font-size: 4.736em; }
+  font-size: 2.827em; }
 
 .block {
   background-color: #06BE49;
@@ -163,8 +163,8 @@
   .block h4,
   .block h5 {
     font-family: 'Titles';
-    line-height: 1.618em;
-    margin: 1em 0; }
+    line-height: 1.5em;
+    margin: 0.5em 0; }
   .block b,
   .block h6,
   .block i,
@@ -172,7 +172,7 @@
   .block p,
   .block ul {
     font-family: 'Body';
-    line-height: 1.618em;
+    line-height: 1.5em;
     margin: 1em 0; }
   .block i {
     font-family: 'Body-Italic'; }
@@ -182,15 +182,15 @@
   .block i > b {
     font-family: 'Body-BoldItalic'; }
   .block h1 {
-    font-size: 10.28em; }
+    font-size: 3.998em; }
   .block h2 {
-    font-size: 6.354em; }
+    font-size: 2.827em; }
   .block h3 {
-    font-size: 3.927em; }
+    font-size: 1.999em; }
   .block h4 {
-    font-size: 2.427em; }
+    font-size: 1.414em; }
   .block h5 {
-    font-size: 1.5em; }
+    font-size: 1em; }
   .block h6 {
     font-size: 0.927em; }
   .block b,
@@ -198,7 +198,7 @@
   .block li,
   .block p,
   .block ul {
-    font-size: 1.5em; }
+    font-size: 1em; }
 
 .semana-title {
   background-color: #0EE25D;
@@ -211,8 +211,17 @@
   background-color: #F9BE02; }
 
 .oculto {
-  margin: 32px 32px 48px;
-  width: 90%; }
+  margin: 32px;
+  width: 100%;
+  display: none; }
+
+.oculto-text {
+  padding-right: 64px;
+  display: inline-block;
+  margin-bottom: 92px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: inline-block; }
 
 .footer-container {
   background-color: #7CDBD5;
@@ -226,14 +235,14 @@
   .footer-container p {
     font-family: 'Titles';
     color: #ffffff;
-    line-height: 1.618em;
+    line-height: 1em;
     margin: 1em 0; }
   .footer-container h1 {
-    font-size: 8.415em; }
+    font-size: 5.653em; }
   .footer-container h2 {
-    font-size: 6.313em; }
+    font-size: 3.998em; }
   .footer-container h3 {
-    font-size: 4.736em; }
+    font-size: 2.827em; }
 
 .footer {
   padding: 64px 0;
@@ -258,14 +267,14 @@ body {
   .header-container p {
     font-family: 'Titles';
     color: #ffffff;
-    line-height: 1.618em;
+    line-height: 1em;
     margin: 1em 0; }
   .header-container h1 {
-    font-size: 8.415em; }
+    font-size: 5.653em; }
   .header-container h2 {
-    font-size: 6.313em; }
+    font-size: 3.998em; }
   .header-container h3 {
-    font-size: 4.736em; }
+    font-size: 2.827em; }
 
 .header {
   margin-bottom: 64px;
@@ -309,13 +318,15 @@ h6 {
 
 img {
   float: right;
-  max-width: 42%;
+  width: 250px;
+  max-width: 90vw;
   max-height: auto;
   border: solid 18px #F9BE02;
-  margin: 24px;
   text-align: right;
-  margin-right: 92px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  display: inline-block;
+  margin-left: 32px;
+  margin-top: 64px; }
 
 .img-presentation {
   float: left;
