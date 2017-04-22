@@ -155,8 +155,7 @@
 .block {
   background-color: #06BE49;
   line-height: 28px;
-  color: #fff;
-  opacity: 0.8; }
+  color: #fff; }
   .block h1,
   .block h2,
   .block h3,
@@ -289,7 +288,7 @@ button {
   color: #fff;
   background-color: #F9BE02;
   font-family: 'Titles';
-  font-size: 3.927em;
+  font-size: 2.827em;
   box-shadow: 0 24px 0 0 #b68b00;
   opacity: 0.9;
   padding: 12px;
@@ -330,7 +329,8 @@ img {
 
 .img-presentation {
   float: left;
-  height: 256px; }
+  height: 256px;
+  margin-right: 64px; }
 
 a {
   text-decoration: none; }

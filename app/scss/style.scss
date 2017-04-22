@@ -72,7 +72,6 @@ $general-text-color: #fff;
     @include bodies;
     @include blokk;
     color           : $text-color;
-    opacity         : 0.8;
 }
 
 .semana-title {
@@ -144,7 +143,7 @@ button {
     color           : $button-text-color;
     background-color: $button-color;
     font-family     : 'Titles';
-    font-size       : 3.927em;
+    font-size       : 2.827em;
     box-shadow      : 0 24px 0 0 $button-shadow-color;
     opacity         : 0.9;
     padding         : 12px;
@@ -190,8 +189,9 @@ img {
 }
 
 .img-presentation {
-    float : left;
-    height: 256px;
+    float       : left;
+    height      : 256px;
+    margin-right: 64px;
 }
 
 a {
