@@ -17,30 +17,30 @@ $text-color: #fff;
 $general-text-color: #fff;
 
 .divider {
-    height          : 3px;
+    height: 3px;
     background-color: $divider-color;
-    z-index         : 1;
+    z-index: 1;
 }
 
 .square {
-    height          : 128px;
-    width           : 128px;
+    height: 128px;
+    width: 128px;
     background-color: $divider-color;
-    z-index         : 2;
-    margin          : auto;
-    position        : relative;
-    bottom          : 64px;
-    overflow        : hidden;
-    border-radius   : 64px;
+    z-index: 2;
+    margin: auto;
+    position: relative;
+    bottom: 64px;
+    overflow: hidden;
+    border-radius: 64px;
 }
 
 .smaller-square {
-    position     : relative;
-    width        : 58%;
-    height       : 58%;
-    margin       : 10% auto auto;
-    background   : $divider-color;
-    border-right : solid 24px $divider-darker;
+    position: relative;
+    width: 58%;
+    height: 58%;
+    margin: 10% auto auto;
+    background: $divider-color;
+    border-right: solid 24px $divider-darker;
     border-bottom: solid 24px $divider-darker;
 }
 
@@ -50,15 +50,15 @@ $general-text-color: #fff;
 
 .texts {
     background-color: $texts-color;
-    padding-top     : 64px;
-    margin          : 0;
-    position        : relative;
+    padding-top: 64px;
+    margin: 0;
+    position: relative;
     @include bodies;
-    color           : $general-text-color;
+    color: $general-text-color;
 }
 
 .paragraphs {
-    display   : inline-block;
+    display: inline-block;
     text-align: center;
     @include titles;
 }
@@ -71,7 +71,7 @@ $general-text-color: #fff;
     background-color: $section-color;
     @include bodies;
     @include blokk;
-    color           : $text-color;
+    color: $text-color;
 }
 
 .semana-title {
@@ -80,6 +80,7 @@ $general-text-color: #fff;
 
     h4 {
         margin-left: 64px;
+        margin-bottom: 32px;
     }
 }
 
@@ -88,28 +89,28 @@ $general-text-color: #fff;
 }
 
 .oculto {
-    margin : 32px;
-    width  : 100%;
+    margin: 32px;
+    width: 100%;
     display: none;
 }
 
 .oculto-text {
     padding-right: 64px;
-    display      : inline-block;
+    display: inline-block;
     margin-bottom: 92px;
-    margin-left  : 32px;
-    margin-right : 32px;
-    display      : inline-block;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: inline-block;
 }
 
 .footer-container {
     @include titles;
     background-color: $titles-bg;
-    color           : $general-text-color;
+    color: $general-text-color;
 }
 
 .footer {
-    padding   : 64px 0;
+    padding: 64px 0;
     text-align: center;
 
     p {
@@ -118,42 +119,42 @@ $general-text-color: #fff;
 }
 
 body {
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 .header-container {
     @include titles;
     background-color: $titles-bg;
-    padding-top     : 48px;
+    padding-top: 48px;
 }
 
 .header {
     margin-bottom: 64px;
-    text-align   : center;
+    text-align: center;
 }
 
 button {
-    position        : relative;
-    display         : block;
-    border          : 0;
-    cursor          : pointer;
-    border-radius   : 16px;
-    color           : $button-text-color;
+    position: relative;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    border-radius: 16px;
+    color: $button-text-color;
     background-color: $button-color;
-    font-family     : 'Titles';
-    font-size       : 2.827em;
-    box-shadow      : 0 24px 0 0 $button-shadow-color;
-    opacity         : 0.9;
-    padding         : 12px;
-    bottom          : 32px;
-    margin          : 24px;
+    font-family: 'Titles';
+    font-size: 2.827em;
+    box-shadow: 0 24px 0 0 $button-shadow-color;
+    opacity: .9;
+    padding: 12px;
+    bottom: 32px;
+    margin: 24px;
 }
 
 button:active {
-    box-shadow   : none;
-    top          : 24px;
+    box-shadow: none;
+    top: 24px;
     margin-bottom: 0;
 }
 
@@ -176,24 +177,29 @@ h6 {
 }
 
 img {
-    float        : right;
-    width        : 250px;
-    max-width    : 90vw;
-    max-height   : auto;
-    border       : solid 18px $divider-color;
-    text-align   : right;
+    width: 250px;
+    max-width: 90vw;
+    max-height: auto;
+    border: solid 18px $divider-color;
+    text-align: right;
     border-radius: 3px;
-    display      : inline-block;
-    margin-left  : 32px;
-    margin-top   : 64px;
+    display: inline-block;
+    margin-top: 42px;
+    float: right;
 }
 
 .img-presentation {
-    float       : left;
-    height      : 256px;
+    float: left;
+    height: 256px;
     margin-right: 64px;
 }
 
 a {
     text-decoration: none;
+}
+
+.info-pag {
+    font-family: 'Titles';
+    font-size: 18px;
+    line-height: 1.5em;
 }

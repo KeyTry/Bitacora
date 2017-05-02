@@ -204,7 +204,8 @@
   cursor: pointer;
   padding: 32px; }
   .semana-title h4 {
-    margin-left: 64px; }
+    margin-left: 64px;
+    margin-bottom: 32px; }
 
 .semana-title:hover {
   background-color: #F9BE02; }
@@ -290,7 +291,7 @@ button {
   font-family: 'Titles';
   font-size: 2.827em;
   box-shadow: 0 24px 0 0 #b68b00;
-  opacity: 0.9;
+  opacity: .9;
   padding: 12px;
   bottom: 32px;
   margin: 24px; }
@@ -316,7 +317,6 @@ h6 {
   margin: 0; }
 
 img {
-  float: right;
   width: 250px;
   max-width: 90vw;
   max-height: auto;
@@ -324,8 +324,8 @@ img {
   text-align: right;
   border-radius: 3px;
   display: inline-block;
-  margin-left: 32px;
-  margin-top: 64px; }
+  margin-top: 42px;
+  float: right; }
 
 .img-presentation {
   float: left;
@@ -334,3 +334,8 @@ img {
 
 a {
   text-decoration: none; }
+
+.info-pag {
+  font-family: 'Titles';
+  font-size: 18px;
+  line-height: 1.5em; }
